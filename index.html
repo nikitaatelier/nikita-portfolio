@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- ✏️ EDIT: page title + description (shows in browser tab / Google) -->
+  <title>Nikita Thakur · Baking things, breaking down data</title>
+  <meta name="description" content="Portfolio of Nikita Thakur, an aspiring data analyst who bakes, loves space and collects quirky facts.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧁</text></svg>">
+
+  <!-- Fonts: Fredoka (bubbly headings) + Nunito (friendly body) + Caveat (handwritten notes) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fredoka:wght@400;500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 + Bootstrap Icons (need internet) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Our own styles (colors live at the top of this file) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#nav" data-bs-offset="100" tabindex="0">
+
+  <!-- ============ NAVBAR (sticky) ============ -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home">nikita<span>✿</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-label="Toggle menu">
+        <i class="bi bi-list fs-2"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#home">Hi!</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#journey">Journey</a></li>
+          <li class="nav-item"><a class="btn btn-pink btn-sm ms-lg-2" href="#contact">Say hello</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header id="home" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 order-2 order-lg-1 text-center text-lg-start">
+          <p class="hand mb-1">hi, i'm</p>
+          <!-- ✏️ EDIT: your name, role, tagline, intro -->
+          <h1 class="display-name">Nikita Thakur</h1>
+          <span class="role-pill"><i class="bi bi-bar-chart-fill"></i> Aspiring Data Analyst</span>
+          <p class="tagline">Baking things, breaking down data.</p>
+          <p class="intro mx-auto mx-lg-0">
+            I turn messy spreadsheets into stories people can actually read, and flour into cupcakes people actually finish.
+            When I'm not wrangling data, I'm stargazing or telling you something weird about octopuses.
+          </p>
+          <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
+            <a href="#projects" class="btn btn-pink btn-lg">View my work</a>
+            <!-- ✏️ EDIT: put your resume PDF in /images and update the link -->
+            <a href="images/resume.pdf" class="btn btn-outline-pink btn-lg" download>Download resume</a>
+          </div>
+        </div>
+
+        <!-- ★ MEMORABLE TOUCH: a kawaii cupcake with its own little solar system ★ -->
+        <div class="col-lg-5 order-1 order-lg-2">
+          <div class="orbit-wrap" aria-hidden="true">
+            <div class="orbit orbit-1"><span class="planet">🪐</span></div>
+            <div class="orbit orbit-2"><span class="planet small">🌙</span></div>
+            <span class="twinkle t1">✦</span><span class="twinkle t2">✧</span><span class="twinkle t3">✦</span><span class="twinkle t4">♡</span>
+
+            <!-- ✏️ To use a real photo instead: delete the <svg> below and use
+                 <img src="images/me.jpg" class="photo" alt="Nikita"> -->
+            <svg class="cupcake" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+              <path d="M48 118h104l-12 82q-1 7-8 7H68q-7 0-8-7z" fill="#F7A8C8"/>
+              <path d="M78 120l5 86M100 120v87M122 120l-5 86" stroke="#fff" stroke-width="3" opacity=".55"/>
+              <ellipse cx="100" cy="116" rx="64" ry="22" fill="#FF8FBF"/>
+              <ellipse cx="100" cy="92" rx="50" ry="20" fill="#FFB3D1"/>
+              <ellipse cx="100" cy="70" rx="33" ry="17" fill="#FFD0E3"/>
+              <circle cx="100" cy="50" r="11" fill="#E8438A"/>
+              <path d="M100 40q4-12 14-14" stroke="#4A2040" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <g fill="#FFE27A"><rect x="70" y="86" width="9" height="4" rx="2" transform="rotate(-25 74 88)"/><rect x="118" y="80" width="9" height="4" rx="2" transform="rotate(30 122 82)"/></g>
+              <g fill="#B8A2FF"><rect x="92" y="96" width="9" height="4" rx="2" transform="rotate(15 96 98)"/><rect x="132" y="98" width="9" height="4" rx="2" transform="rotate(-30 136 100)"/></g>
+              <circle cx="80" cy="170" r="4" fill="#4A2040"/><circle cx="120" cy="170" r="4" fill="#4A2040"/>
+              <ellipse cx="68" cy="182" rx="8" ry="5" fill="#FF8FBF" opacity=".7"/><ellipse cx="132" cy="182" rx="8" ry="5" fill="#FF8FBF" opacity=".7"/>
+              <path d="M91 178q9 9 18 0" stroke="#4A2040" stroke-width="3" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ ABOUT + FUN FACT ============ -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">A little about me</h2>
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-7 reveal">
+          <div class="card-cute h-100">
+            <!-- ✏️ EDIT: your story -->
+            <p>I'm a second-year student getting into data analytics. I love finding the pattern hiding in a pile of numbers, the same way a good recipe hides in a pile of ingredients.</p>
+            <p>Outside of class you'll find me baking (cupcakes are my love language), reading about black holes and exoplanets, or sharing a random fact nobody asked for. Usually all three.</p>
+            <div class="chips">
+              <span class="chip">🧁 Baking</span><span class="chip">🚀 Space</span><span class="chip">🧠 Quirky facts</span><span class="chip">📊 Data stories</span>
+            </div>
+          </div>
+        </div>
+        <!-- Interactive fact card: facts are in js/main.js -->
+        <div class="col-lg-5 reveal">
+          <div class="card-cute fact-card h-100 text-center">
+            <p class="hand fs-3 mb-2">random fact of the moment</p>
+            <p id="factText" class="fact-text">Bananas are berries, but strawberries aren't. 🍌</p>
+            <button id="factBtn" class="btn btn-pink">Tell me another!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ("my pantry") ============ -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">My pantry of skills</h2>
+      <p class="section-sub reveal">Every good analysis starts with good ingredients.</p>
+      <div class="row g-4">
+        <!-- ✏️ EDIT: change --w (0-100%) to set the bar. Icons: https://icons.getbootstrap.com -->
+        <div class="col-sm-6 col-lg-3 reveal"><div class="card-cute skill">
+          <i class="bi bi-database-fill"></i><h3>SQL</h3><p class="small">Joins, CTEs, window functions</p>
+          <div class="measure-bar"><span style="--w:80%"></span></div></div></div>
+        <div class="col-sm-6 col-lg-3 reveal"><div class="card-cute skill">
+          <i class="bi bi-pie-chart-fill"></i><h3>Power BI</h3><p class="small">Dashboards &amp; DAX basics</p>
+          <div class="measure-bar"><span style="--w:70%"></span></div></div></div>
+        <div class="col-sm-6 col-lg-3 reveal"><div class="card-cute skill">
+          <i class="bi bi-file-earmark-spreadsheet-fill"></i><h3>Excel</h3><p class="small">Pivot tables, lookups, cleaning</p>
+          <div class="measure-bar"><span style="--w:85%"></span></div></div></div>
+        <div class="col-sm-6 col-lg-3 reveal"><div class="card-cute skill">
+          <i class="bi bi-filetype-py"></i><h3>Python</h3><p class="small">Pandas, Matplotlib, notebooks</p>
+          <div class="measure-bar"><span style="--w:65%"></span></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Things I've cooked up</h2>
+      <p class="section-sub reveal">Sample projects: swap in your own title, text, tags and links.</p>
+      <div class="row g-4">
+        <!-- ✏️ EDIT each card: emoji thumbnail (or use <img src="images/p1.jpg">), title, text, tags, links -->
+        <div class="col-md-6 col-lg-4 reveal"><article class="card-cute project">
+          <div class="thumb t-pink">🧁</div>
+          <h3>Bakery Sales Dashboard</h3>
+          <p>An interactive dashboard showing best-selling items, busiest hours and monthly revenue for a small bakery.</p>
+          <div class="chips"><span class="chip">Power BI</span><span class="chip">Excel</span></div>
+          <div class="links"><a href="#" class="btn btn-pink btn-sm">Live demo</a><a href="#" class="btn btn-outline-pink btn-sm"><i class="bi bi-github"></i> GitHub</a></div>
+        </article></div>
+        <div class="col-md-6 col-lg-4 reveal"><article class="card-cute project">
+          <div class="thumb t-lav">🚀</div>
+          <h3>Space Missions Explorer</h3>
+          <p>SQL queries on a rocket launch dataset to see which countries launch most and how success rates changed over time.</p>
+          <div class="chips"><span class="chip">SQL</span><span class="chip">Python</span></div>
+          <div class="links"><a href="#" class="btn btn-pink btn-sm">Live demo</a><a href="#" class="btn btn-outline-pink btn-sm"><i class="bi bi-github"></i> GitHub</a></div>
+        </article></div>
+        <div class="col-md-6 col-lg-4 reveal"><article class="card-cute project">
+          <div class="thumb t-butter">🧠</div>
+          <h3>Fun Facts Analyzer</h3>
+          <p>A Python notebook that cleans a trivia dataset and charts which categories of facts surprise people most.</p>
+          <div class="chips"><span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">Matplotlib</span></div>
+          <div class="links"><a href="#" class="btn btn-pink btn-sm">Live demo</a><a href="#" class="btn btn-outline-pink btn-sm"><i class="bi bi-github"></i> GitHub</a></div>
+        </article></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JOURNEY (timeline) ============ -->
+  <section id="journey" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">My journey so far</h2>
+      <div class="timeline mx-auto">
+        <!-- ✏️ EDIT: your education / experience -->
+        <div class="tl-item reveal"><span class="tl-dot">🎓</span><div class="card-cute"><h3>Your Degree, Your College</h3><p class="when">2024 – Present</p><p>Second year. Studying core computer and data subjects and building projects on the side.</p></div></div>
+        <div class="tl-item reveal"><span class="tl-dot">📜</span><div class="card-cute"><h3>Data Analytics Course / Certificate</h3><p class="when">Add year</p><p>Add the name of an online course or certificate you completed.</p></div></div>
+        <div class="tl-item reveal"><span class="tl-dot">🧑‍🍳</span><div class="card-cute"><h3>Baking Hobbyist (self-taught)</h3><p class="when">Ongoing</p><p>Learned that precision and patience matter in both a sponge cake and a SQL query.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Let's chat!</h2>
+      <p class="section-sub reveal">Got an internship, a project idea or a cupcake recipe? I'd love to hear it.</p>
+      <div class="row g-4">
+        <div class="col-lg-5 reveal">
+          <div class="card-cute h-100">
+            <!-- ✏️ EDIT: your real email + social links -->
+            <p><i class="bi bi-envelope-heart-fill me-2"></i><a href="mailto:you@example.com">you@example.com</a></p>
+            <p><i class="bi bi-linkedin me-2"></i><a href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a></p>
+            <p><i class="bi bi-github me-2"></i><a href="https://github.com/your-handle" target="_blank" rel="noopener">GitHub</a></p>
+            <p class="mb-0"><i class="bi bi-instagram me-2"></i><a href="https://instagram.com/your-handle" target="_blank" rel="noopener">Instagram (baking pics!)</a></p>
+          </div>
+        </div>
+        <div class="col-lg-7 reveal">
+          <!-- UI only: no backend. To make it work, use a service like Formspree (set the form's action). -->
+          <form id="contactForm" class="card-cute" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6"><label for="cName" class="form-label">Your name</label><input id="cName" class="form-control" required></div>
+              <div class="col-sm-6"><label for="cEmail" class="form-label">Your email</label><input id="cEmail" type="email" class="form-control" required></div>
+              <div class="col-12"><label for="cMsg" class="form-label">Message</label><textarea id="cMsg" rows="4" class="form-control" required></textarea></div>
+              <div class="col-12"><button class="btn btn-pink" type="submit">Send message</button><span id="formNote" class="ms-3 fw-bold" role="status"></span></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer text-center">
+    <div class="social mb-2">
+      <a href="https://linkedin.com/in/your-handle" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/your-handle" aria-label="GitHub"><i class="bi bi-github"></i></a>
+      <a href="https://instagram.com/your-handle" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      <a href="mailto:you@example.com" aria-label="Email"><i class="bi bi-envelope-heart-fill"></i></a>
+    </div>
+    <p class="mb-0">&copy; <span id="year"></span> Nikita Thakur. Made with ♡ and a little bit of sprinkles.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
